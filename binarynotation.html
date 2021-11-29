@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FoC</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+
+<header style ="background-color:white" "color:red">
+  <h2 style="color:black" "background-color:green"><b>Binary Notation</b></h2>
+</header>
+<section>
+  <nav>
+    <ul>
+      <li><h5><a href="course.html">Course</a></h5></li>
+      <li><h5><a href="project.html">Project</a></h5></li>
+	  <li><h5><a href="concepts.html">Concepts</a></h5></li>
+	  <li><h5><a href="databasequeries.html">Databases</a></h5></li>
+	  <li><h5><a href="documentation.html">Documentation</a></h5></li>
+      <li><h5><a href="aboutus.html">Dev Team</a></h5></li>
+    </ul>
+  </nav>
+  
+  <article style="background-color:yellow">
+   <center></center>
+   <p></p>
+
+    <p> BINARY Notation </p>
+    <p> This webpage serves as a Binary calculator by converting base 10 numbers to binary. </p>
+
+
+<center>
+<p>Enter first number:</p>
+<input type = "number" id="inputdec1" >
+<p></p>
+
+<p>Enter second number:</p>
+<input type = "number" id="inputdec2" >
+<p></p>
+
+<button onclick="decToBin()">Submit</button>
+<p></p>
+<p>BINARY Values : </p>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+
+  
+  function decToBin() {
+  var num1 = document.getElementById("inputdec1").value;
+  var res1 = (num1 >>> 0).toString(2);
+  document.getElementById("demo").innerHTML = res1;
+  var num2 = document.getElementById("inputdec2").value;
+  var res2 = (num2 >>> 0).toString(2);
+  document.getElementById("demo2").innerHTML = res2;
+  var ans= +num1 + +num2;
+ 
+  }
+  
+</script>
+
+
+
+</center>
+<footer>
+  <p style="background-color: violet">Author: Henry</p>
+</footer>
+
+</body>
+</html>
